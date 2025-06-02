@@ -1,0 +1,51 @@
+Codigos con posible uso más adelante
+
+/* "Cartas" con imagen, descripción y link */
+
+<section id="servicios" class="cards-container">
+            <h2>Nuestros servicios</h2>
+            <div class="cards">
+                <a href="biceps.html" class="card">
+                    <img src="/static/images/biceps.png" alt="Bíceps">
+                    <h3>Bíceps</h3>
+                    <p>Ejercicios para fortalecer los bíceps.</p>
+                </a>
+                <a href="triceps.html" class="card">
+                    <img src="static/images/triceps.png" alt="Tríceps">
+                    <h3>Tríceps</h3>
+                    <p>Rutinas para definir los tríceps.</p>
+                </a>
+                <a href="pierna.html" class="card">
+                    <img src="/static/images/pierna.png" alt="Piernas">
+                    <h3>Piernas</h3>
+                    <p>Entrenamiento completo para piernas.</p>
+                </a>
+                <a href="espalda.html" class="card">
+                    <img src="/static/images/espalda.png" alt="Espalda">
+                    <h3>Espalda</h3>
+                    <p>Ejercicios para fortalecer la espalda.</p>
+                </a>
+                <a href="pecho.html" class="card">
+                    <img src="/static/images/pecho.png" alt="Pecho">
+                    <h3>Pecho</h3>
+                    <p>Rutinas para aumentar el volumen del pecho.</p>
+                </a>
+                <a href="hombros.html" class="card">
+                    <img src="/static/images/hombros.png" alt="Hombros">
+                    <h3>Hombros</h3>
+                    <p>Ejercicios para unos hombros más anchos.</p>
+                </a>
+                <a href="abdomen.html" class="card">
+                    <img src="static/images/abdomen.png" alt="Abdomen">
+                    <h3>Abdomen</h3>
+                    <p>Ejercicios para marcar el abdomen.</p>
+                </a>
+                <a href="cardio.html" class="card">
+                    <img src="static/images/cardio.png" alt="Cardio">
+                    <h3>Cardio</h3>
+                    <p>Rutinas para mejorar la resistencia.</p>
+                </a>
+            </div>
+        </section>
+
+/* Más ideas añadirlas abajo */

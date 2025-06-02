@@ -1,0 +1,124 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+nav {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Imagen grande */
+.image-section {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.exercise-image {
+    width: 100%;
+    max-width: 800px; /* Limitar el tamaño máximo */
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Título arriba de la imagen */
+.image-title {
+    color: #333;  /* Color oscuro para el título */
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;  /* Espacio entre el título y la imagen */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Sección de información */
+/* Estilo para la sección de los contenedores */
+.info-section {
+    display: flex;                /* Usamos Flexbox para colocar los contenedores en una fila */
+    justify-content: space-between; /* Espacio igual entre los contenedores */
+    gap: 20px;                    /* Espacio entre los contenedores */
+    margin-top: 30px;             /* Espacio superior para separarlo de la imagen */
+    flex-wrap: wrap;              /* Si la pantalla es pequeña, los contenedores se apilan */
+}
+
+/* Estilo para cada contenedor */
+.info-container {
+    flex: 1;                      /* Cada contenedor ocupará un espacio igual */
+    min-width: 280px;              /* Evita que los contenedores sean demasiado pequeños */
+    background-color: #f5f5f5;    /* Fondo suave para los contenedores */
+    padding: 30px;                 /* Espaciado dentro de los contenedores */
+    border-radius: 8px;            /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra sutil para dar profundidad */
+    color: #333;                  /* Color de texto */
+}
+
+/* Título dentro de los contenedores */
+.info-container h2 {
+    font-size: 1.5rem;
+    color: #2c3e50;               /* Color oscuro para los títulos */
+    margin-bottom: 15px;           /* Espacio inferior entre el título y el contenido */
+}
+
+/* Estilo para las listas dentro de los contenedores */
+.info-container ul {
+    list-style-type: disc;         /* Estilo de lista con círculos */
+    margin-left: 20px;             /* Espacio izquierdo para las listas */
+}
+
+/* Sección de videos */
+.videos {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.video-item {
+    width: 100%;
+    max-width: 560px; /* Limitar el tamaño del video */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
