@@ -37,44 +37,46 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ----- Tooltip flotante para nombre de músculo -----
-    const tooltip = document.getElementById('muscle-name-f');
+    // Tooltip para mapa frontal
+const tooltipF = document.getElementById('muscle-name-f');
+const frontalAreas = document.querySelectorAll('map[name="mapa-frontal"] area');
 
-    document.querySelectorAll('area').forEach(area => {
-        area.addEventListener('mouseover', (e) => {
-            const name = area.getAttribute('data-name');
-            tooltip.textContent = name;
-            tooltip.style.display = 'block';
-        });
-
-        area.addEventListener('mousemove', (e) => {
-            tooltip.style.left = `${e.pageX + 10}px`;
-            tooltip.style.top = `${e.pageY - 30}px`;
-        });
-
-        area.addEventListener('mouseout', () => {
-            tooltip.style.display = 'none';
-        });
+frontalAreas.forEach(area => {
+    area.addEventListener('mouseover', () => {
+        tooltipF.textContent = area.getAttribute('data-name');
+        tooltipF.style.display = 'block';
     });
 
-    // ----- Tooltip flotante para nombre de músculo -----
-    const tooltipB = document.getElementById('muscle-name-b');
-
-    document.querySelectorAll('area').forEach(area => {
-        area.addEventListener('mouseover', (e) => {
-            const name = area.getAttribute('data-name');
-            tooltipB.textContent = name;
-            tooltipB.style.display = 'block';
-        });
-
-        area.addEventListener('mousemove', (e) => {
-            tooltipB.style.left = `${e.pageX + 10}px`;
-            tooltipB.style.top = `${e.pageY - 30}px`;
-        });
-
-        area.addEventListener('mouseout', () => {
-            tooltipB.style.display = 'none';
-        });
+    area.addEventListener('mousemove', (e) => {
+        tooltipF.style.left = `${e.pageX + 10}px`;
+        tooltipF.style.top = `${e.pageY - 30}px`;
     });
+
+    area.addEventListener('mouseout', () => {
+        tooltipF.style.display = 'none';
+    });
+});
+
+// Tooltip para mapa posterior
+const tooltipB = document.getElementById('muscle-name-b');
+const backAreas = document.querySelectorAll('map[name="mapa-posterior"] area');
+
+backAreas.forEach(area => {
+    area.addEventListener('mouseover', () => {
+        tooltipB.textContent = area.getAttribute('data-name');
+        tooltipB.style.display = 'block';
+    });
+
+    area.addEventListener('mousemove', (e) => {
+        tooltipB.style.left = `${e.pageX + 10}px`;
+        tooltipB.style.top = `${e.pageY - 30}px`;
+    });
+
+    area.addEventListener('mouseout', () => {
+        tooltipB.style.display = 'none';
+    });
+});
+
 });
 
 // ----- Función para mostrar mensajes flash -----
