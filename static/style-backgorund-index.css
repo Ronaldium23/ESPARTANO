@@ -1,0 +1,70 @@
+.hero-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    color: rgb(255, 255, 255);
+}
+
+/* Fondo con dos imágenes en dos mitades */
+.hero-section::before,
+.hero-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+    opacity: 0.5; /* Puedes ajustar esto para más o menos visibilidad */
+}
+
+.hero-section::before {
+    left: 0;
+    background-image: url('/ESPARTANO/static/images/fondo-izquierdo.jpg.jpg');
+}
+
+.hero-section::after {
+    right: 0;
+    background-image: url('/ESPARTANO/static/images/fondo-derecho.jpg.jpg');
+}
+
+/* Contenedor del texto */
+.hero-overlay {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+
+.hero-overlay h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero-overlay p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    padding: 12px 24px;
+    background-color: #6d2d00;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #a73907;
+}
