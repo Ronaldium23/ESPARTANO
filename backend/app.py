@@ -9,7 +9,7 @@ CORS(app)  # Esto habilita CORS para toda la aplicación
 
 load_dotenv()  # Cargar las variables de entorno desde el archivo .env
 
-app.secret_key = os.getenv('FLASH_SECRET_KEY', '123')
+app.secret_key = os.getenv('FLASH_SECRET_KEY', '58720192')
 
 # Configuraciones de correo electrónico
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
