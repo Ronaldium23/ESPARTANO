@@ -1,0 +1,68 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card1{
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 90px 5px 5px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 0.2s ease-in-out;
+}
+
+.instagram{
+    margin-top: 1.5rem;
+    margin-left: 1.2rem;
+    fill: #cc39a4;
+}
+
+.card1:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #cc39a4;
+}
+
+.card1:hover .instagram{
+    fill: white;
+}
+
+.icon {
+  margin-top: 1.5rem;
+  margin-left: 1.2rem;
+  transition: fill 0.2s ease-in-out;
+}
+
+.whatsapp {
+  fill: #25D366;
+}
+
+.github {
+  fill: #333;
+}
+
+.card1:hover .whatsapp {
+  fill: white;
+}
+
+.card1:hover .github {
+  fill: white;
+}
+
+.instagram-bg i { color: #cc39a4; }
+.whatsapp-bg i { color: #25D366; }
+.github-bg i { color: #333; }
+
+.instagram-bg:hover { background-color: #cc39a4; }
+.instagram-bg:hover i { color: white; }
+
+.whatsapp-bg:hover { background-color: #25D366; }
+.whatsapp-bg:hover i { color: white; }
+
+.github-bg:hover { background-color: #333; }
+.github-bg:hover i { color: white; }
