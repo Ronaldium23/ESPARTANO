@@ -25,12 +25,13 @@
 
 .hero-section::before {
     left: 0;
-    background-image: url('/ESPARTANO/static/images/fondo-izquierdo.jpg.jpg');
+    background-image: url('static/images/fondo-izquierdo.jpg.jpg');
 }
 
 .hero-section::after {
     right: 0;
-    background-image: url('/ESPARTANO/static/images/fondo-derecho.jpg.jpg');
+    
+    background-image: url('static/images/fondo-derecho.jpg.jpg');
 }
 
 /* Contenedor del texto */
