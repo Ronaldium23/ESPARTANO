@@ -4,32 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/ESPARTANO/static/style-musc.css">
-    <link rel="stylesheet" href="/ESPARTANO/static/styles.css">
-    <link rel="stylesheet" href="/ESPARTANO/static/style-logo.css">
-    <script src="/static/app.js" defer></script>
+    <link rel="stylesheet" href="static/style-musc.css">
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="stylesheet" href="static/style-logo.css">
+    <script src="static/app.js" defer></script>
     <title>Bíceps</title>
 </head>
 
 <body>
     <nav class="navbar">
         <div class="logo">
-            <img src="/ESPARTANO/static/images/logo.png" alt="Logo" class="logo-img">
+             <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="logo-img" />
             ESPARTANO
         </div>
         <ul class="nav-links">
-            <li><a href="/ESPARTANO/index.html#inicio">INICIO</a></li>
-            <li><a href="/ESPARTANO/index.html#servicios">MAPA MUSCULAR</a></li>
-            <li><a href="/ESPARTANO/index.html#contacto">CONTACTO</a></li>
-            <li><a href="/ESPARTANO/index.html#acerca">ACERCA DE NOSOTROS</a></li>
+            <li><a href="#inicio">INICIO</a></li>
+            <li><a href="#servicios">MAPA MUSCULAR</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
+            <li><a href="#acerca">ACERCA DE NOSOTROS</a></li>
         </ul>
+        <button class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </nav>
-
     <main class="exercise-page">
         <!-- Imagen grande -->
         <section class="image-section">
             <h1 class="image-title">Grupo muscular: Bíceps</h1>
-            <img src="/ESPARTANO/static/images/biceps.png" alt="Anatomía del bíceps" class="exercise-image">
+            <img src="{{ url_for('static', filename='images/biceps.png') }}" alt="Anatomía del bíceps" class="exercise-image" />
         </section>
 
         <!-- Sección de información sobre el bíceps -->

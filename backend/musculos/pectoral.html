@@ -12,21 +12,26 @@
 <body>
     <nav class="navbar">
         <div class="logo">
-            <img src="/ESPARTANO/static/images/logo.png" alt="Logo" class="logo-img">
+             <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="logo-img" />
             ESPARTANO
         </div>
         <ul class="nav-links">
-            <li><a href="/index.html#inicio">INICIO</a></li>
-            <li><a href="/index.html#servicios">MAPA MUSCULAR</a></li>
-            <li><a href="/index.html#contacto">CONTACTO</a></li>
-            <li><a href="/index.html#acerca">ACERCA DE NOSOTROS</a></li>
+            <li><a href="#inicio">INICIO</a></li>
+            <li><a href="#servicios">MAPA MUSCULAR</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
+            <li><a href="#acerca">ACERCA DE NOSOTROS</a></li>
         </ul>
+        <button class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </nav>
 
     <main class="exercise-page">
         <h1>Pecho</h1>
         <div class="exercise-content">
-            <img src="/ESPARTANO/static/images/pecho.png" alt="Pecho">
+            <img src="{{ url_for('static', filename='images/biceps.png') }}" alt="Anatomía del bíceps" class="exercise-image" />
             <p>Ejercicios para fortalecer la zona del pectoral, mejorar la fuerza y aumentar el volumen muscular.</p>
         </div>
 
