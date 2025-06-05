@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
 
-            fetch('http://127.0.0.1:5000/send_email', {
+            fetch("https://contacto-backend-gys7.onrender.com/send_email", {
                 method: 'POST',
                 body: formData
             })
